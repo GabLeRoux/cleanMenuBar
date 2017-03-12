@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B0C979351E0C798500EECDD4 /* CleanMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C979341E0C798500EECDD4 /* CleanMenuBar.m */; };
+		FB12E8641E75382B00BF144E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB12E8631E75382B00BF144E /* AppDelegate.m */; };
+		FB12E8671E75382B00BF144E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB12E8661E75382B00BF144E /* main.m */; };
+		FB12E8721E753A0500BF144E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB12E8711E753A0500BF144E /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,10 +18,23 @@
 		B0C9792D1E0C796800EECDD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C979331E0C798500EECDD4 /* CleanMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanMenuBar.h; sourceTree = "<group>"; };
 		B0C979341E0C798500EECDD4 /* CleanMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanMenuBar.m; sourceTree = "<group>"; };
+		FB12E8601E75382A00BF144E /* cleanMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cleanMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB12E8621E75382B00BF144E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB12E8631E75382B00BF144E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB12E8661E75382B00BF144E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB12E86D1E75382B00BF144E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB12E8711E753A0500BF144E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B0C979271E0C796800EECDD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB12E85D1E75382A00BF144E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,7 +47,8 @@
 		B0C979211E0C796800EECDD4 = {
 			isa = PBXGroup;
 			children = (
-				B0C9792C1E0C796800EECDD4 /* CleanMenuBar */,
+				B0C9792C1E0C796800EECDD4 /* cleanMenu */,
+				FB12E8611E75382A00BF144E /* cleanMenuApp */,
 				B0C9792B1E0C796800EECDD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,18 +57,41 @@
 			isa = PBXGroup;
 			children = (
 				B0C9792A1E0C796800EECDD4 /* CleanMenuBar.bundle */,
+				FB12E8601E75382A00BF144E /* cleanMenu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0C9792C1E0C796800EECDD4 /* CleanMenuBar */ = {
+		B0C9792C1E0C796800EECDD4 /* cleanMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B0C9792D1E0C796800EECDD4 /* Info.plist */,
 				B0C979331E0C798500EECDD4 /* CleanMenuBar.h */,
 				B0C979341E0C798500EECDD4 /* CleanMenuBar.m */,
+				B0C9792D1E0C796800EECDD4 /* Info.plist */,
 			);
+			name = cleanMenu;
 			path = CleanMenuBar;
+			sourceTree = "<group>";
+		};
+		FB12E8611E75382A00BF144E /* cleanMenuApp */ = {
+			isa = PBXGroup;
+			children = (
+				FB12E8651E75382B00BF144E /* Supporting Files */,
+				FB12E8621E75382B00BF144E /* AppDelegate.h */,
+				FB12E8631E75382B00BF144E /* AppDelegate.m */,
+				FB12E86D1E75382B00BF144E /* Info.plist */,
+			);
+			name = cleanMenuApp;
+			path = cleanMenu;
+			sourceTree = "<group>";
+		};
+		FB12E8651E75382B00BF144E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB12E8711E753A0500BF144E /* icon.png */,
+				FB12E8661E75382B00BF144E /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +114,23 @@
 			productReference = B0C9792A1E0C796800EECDD4 /* CleanMenuBar.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		FB12E85F1E75382A00BF144E /* cleanMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB12E8701E75382B00BF144E /* Build configuration list for PBXNativeTarget "cleanMenu" */;
+			buildPhases = (
+				FB12E85C1E75382A00BF144E /* Sources */,
+				FB12E85D1E75382A00BF144E /* Frameworks */,
+				FB12E85E1E75382A00BF144E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cleanMenu;
+			productName = cleanMenu;
+			productReference = FB12E8601E75382A00BF144E /* cleanMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -87,6 +144,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					FB12E85F1E75382A00BF144E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B0C979251E0C796800EECDD4 /* Build configuration list for PBXProject "CleanMenuBar" */;
@@ -95,6 +156,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B0C979211E0C796800EECDD4;
 			productRefGroup = B0C9792B1E0C796800EECDD4 /* Products */;
@@ -102,6 +164,7 @@
 			projectRoot = "";
 			targets = (
 				B0C979291E0C796800EECDD4 /* CleanMenuBar */,
+				FB12E85F1E75382A00BF144E /* cleanMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -114,6 +177,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB12E85E1E75382A00BF144E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB12E8721E753A0500BF144E /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -122,6 +193,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C979351E0C798500EECDD4 /* CleanMenuBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB12E85C1E75382A00BF144E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB12E8671E75382B00BF144E /* main.m in Sources */,
+				FB12E8641E75382B00BF144E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +324,30 @@
 			};
 			name = Release;
 		};
+		FB12E86E1E75382B00BF144E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = cleanMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.w0lf.cleanMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB12E86F1E75382B00BF144E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = cleanMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.w0lf.cleanMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -264,6 +368,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FB12E8701E75382B00BF144E /* Build configuration list for PBXNativeTarget "cleanMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB12E86E1E75382B00BF144E /* Debug */,
+				FB12E86F1E75382B00BF144E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
