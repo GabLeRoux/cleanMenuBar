@@ -5,7 +5,7 @@
 # Information:
 
 - Tested on 10.12
-- SIMBL plugin to hide menu bar icons for selected third-party apps on macOS
+- Menubar application with companion mySIMBL plugin to show/hide menu bar icons on macOS this is a basic free alternative to [Bartender](https://www.macbartender.com/)
 - Author:
     + [w0lfschikd](https://github.com/w0lfschild)
     + [Kevin Beaulieu](https://github.com/kevinmbeaulieu)
@@ -17,7 +17,3 @@
 3. Unzip downloads
 4. Open `mySIMBL.app` and open `cleanMenu.app`
 5. Log out and log back in
-
-### License:
-Pretty much the BSD license, just don't repackage it and call it your own please!    
-Also if you do make some changes, feel free to make a pull request and help make things more awesome!

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B0C979291E0C796800EECDD4"
-               BuildableName = "CleanMenuBar.bundle"
-               BlueprintName = "CleanMenuBar"
+               BuildableName = "cleanMenuBar.bundle"
+               BlueprintName = "cleanMenuBar"
                ReferencedContainer = "container:CleanMenuBar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0C979291E0C796800EECDD4"
-            BuildableName = "CleanMenuBar.bundle"
-            BlueprintName = "CleanMenuBar"
+            BuildableName = "cleanMenuBar.bundle"
+            BlueprintName = "cleanMenuBar"
             ReferencedContainer = "container:CleanMenuBar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0C979291E0C796800EECDD4"
-            BuildableName = "CleanMenuBar.bundle"
-            BlueprintName = "CleanMenuBar"
+            BuildableName = "cleanMenuBar.bundle"
+            BlueprintName = "cleanMenuBar"
             ReferencedContainer = "container:CleanMenuBar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
