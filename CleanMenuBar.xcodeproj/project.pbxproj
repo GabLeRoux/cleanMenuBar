@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B0C979351E0C798500EECDD4 /* CleanMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C979341E0C798500EECDD4 /* CleanMenuBar.m */; };
+		FB0CD3021E8A442D006002E1 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0CD3011E8A442D006002E1 /* icon4.png */; };
 		FB12E8641E75382B00BF144E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB12E8631E75382B00BF144E /* AppDelegate.m */; };
 		FB12E8671E75382B00BF144E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB12E8661E75382B00BF144E /* main.m */; };
 		FB12E8721E753A0500BF144E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB12E8711E753A0500BF144E /* icon.png */; };
 		FB397E911E88BB2F00E9F3A6 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = FB397E901E88BB2F00E9F3A6 /* icon3.png */; };
-		FB397E951E88BE7300E9F3A6 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = FB397E941E88BE7300E9F3A6 /* icon4.png */; };
 		FB397E971E88BF5800E9F3A6 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = FB397E961E88BF5800E9F3A6 /* icon2.png */; };
 		FB397E9A1E88C09100E9F3A6 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB397E981E88C09100E9F3A6 /* icon1.png */; };
-		FB397E9B1E88C09100E9F3A6 /* icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = FB397E991E88C09100E9F3A6 /* icon6.png */; };
+		FB397E9B1E88C09100E9F3A6 /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = FB397E991E88C09100E9F3A6 /* icon5.png */; };
 		FB397E9E1E89A4A300E9F3A6 /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB397E9D1E89A4A300E9F3A6 /* ZKSwizzle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FBB043111E89F99800FF8A31 /* PFAboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB0430F1E89F99800FF8A31 /* PFAboutWindow.xib */; };
 		FBB043121E89F99800FF8A31 /* PFAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB043101E89F99800FF8A31 /* PFAboutWindowController.m */; };
@@ -44,6 +44,7 @@
 		B0C9792A1E0C796800EECDD4 /* cleanMenuBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cleanMenuBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C9792D1E0C796800EECDD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C979341E0C798500EECDD4 /* CleanMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CleanMenuBar.m; sourceTree = "<group>"; };
+		FB0CD3011E8A442D006002E1 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon4.png; sourceTree = "<group>"; };
 		FB12E8601E75382A00BF144E /* cleanMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cleanMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB12E8621E75382B00BF144E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB12E8631E75382B00BF144E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,10 +52,9 @@
 		FB12E86D1E75382B00BF144E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB12E8711E753A0500BF144E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		FB397E901E88BB2F00E9F3A6 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
-		FB397E941E88BE7300E9F3A6 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon4.png; sourceTree = "<group>"; };
 		FB397E961E88BF5800E9F3A6 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		FB397E981E88C09100E9F3A6 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
-		FB397E991E88C09100E9F3A6 /* icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon6.png; sourceTree = "<group>"; };
+		FB397E991E88C09100E9F3A6 /* icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon5.png; sourceTree = "<group>"; };
 		FB397E9C1E89A4A300E9F3A6 /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSwizzle.h; sourceTree = "<group>"; };
 		FB397E9D1E89A4A300E9F3A6 /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSwizzle.m; sourceTree = "<group>"; };
 		FBB0430E1E89F99800FF8A31 /* PFAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAboutWindowController.h; sourceTree = "<group>"; };
@@ -141,12 +141,12 @@
 		FB12E8651E75382B00BF144E /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				FB397E961E88BF5800E9F3A6 /* icon2.png */,
-				FB397E941E88BE7300E9F3A6 /* icon4.png */,
-				FB397E901E88BB2F00E9F3A6 /* icon3.png */,
 				FB12E8711E753A0500BF144E /* icon.png */,
 				FB397E981E88C09100E9F3A6 /* icon1.png */,
-				FB397E991E88C09100E9F3A6 /* icon6.png */,
+				FB397E961E88BF5800E9F3A6 /* icon2.png */,
+				FB397E901E88BB2F00E9F3A6 /* icon3.png */,
+				FB0CD3011E8A442D006002E1 /* icon4.png */,
+				FB397E991E88C09100E9F3A6 /* icon5.png */,
 				FB12E8661E75382B00BF144E /* main.m */,
 			);
 			name = Icons;
@@ -285,11 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB397E9B1E88C09100E9F3A6 /* icon6.png in Resources */,
+				FB397E9B1E88C09100E9F3A6 /* icon5.png in Resources */,
 				FBB043191E8A177900FF8A31 /* Credits.rtf in Resources */,
 				FB397E971E88BF5800E9F3A6 /* icon2.png in Resources */,
 				FBB043111E89F99800FF8A31 /* PFAboutWindow.xib in Resources */,
-				FB397E951E88BE7300E9F3A6 /* icon4.png in Resources */,
+				FB0CD3021E8A442D006002E1 /* icon4.png in Resources */,
 				FBB0431A1E8A177900FF8A31 /* EULA.rtf in Resources */,
 				FB12E8721E753A0500BF144E /* icon.png in Resources */,
 				FB397E911E88BB2F00E9F3A6 /* icon3.png in Resources */,

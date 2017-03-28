@@ -59,18 +59,17 @@ NSMutableArray *menuItems;
     menuDict = [[NSMutableDictionary alloc] init];
     
     self.aboutWindowController = [[PFAboutWindowController alloc] init];
-    
-    [self.aboutWindowController setAppURL:[[NSURL alloc] initWithString:@"http://app.faramaz.com"]];
-//    [self.aboutWindowController setAppCopyright:[[NSAttributedString alloc] initWithString:@"Nice Small String"
-//                                                                                attributes:@{
-//                                                                                             NSForegroundColorAttributeName:[NSColor tertiaryLabelColor],
-//                                                                                             NSFontAttributeName:[NSFont fontWithName:@"HelveticaNeue" size:11]}]];
-//    [self.aboutWindowController setAppName:@"PFAbout"];
+    [self.aboutWindowController setAppURL:[[NSURL alloc] initWithString:@"https://github.com/w0lfschild/cleanMenuBar"]];
     
     NSStatusBar *sys = [NSStatusBar systemStatusBar];
     _statusItem = [sys statusItemWithLength:NSVariableStatusItemLength];
     _statusItem.highlightMode = true;
-    NSImage *ico = [NSImage imageNamed:@"icon"];
+    
+    NSImage *ico;
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"iconFile"])
+        ico = [NSImage imageNamed:[[NSUserDefaults standardUserDefaults] objectForKey:@"iconFile"]];
+    else
+        ico = [NSImage imageNamed:@"icon"];
     ico = [AppDelegate resizedImage:ico toPixelDimensions:NSMakeSize(18, 18)];
     [ico setTemplate:true];
     [_statusItem setImage:ico];
@@ -87,11 +86,11 @@ NSMutableArray *menuItems;
     // Insert code here to tear down your application
 }
 
--(void) menuWillOpen:(NSMenu *)menu{
+- (void)menuWillOpen:(NSMenu *)menu{
 //    [self generateMenu];
 }
 
--(void) menuNeedsUpdate:(NSMenu *)menu{
+- (void)menuNeedsUpdate:(NSMenu *)menu{
 //    [self generateMenu];
 }
 
@@ -107,7 +106,33 @@ NSMutableArray *menuItems;
     
     [[myMenu addItemWithTitle:@"About cleanMenu" action:@selector(showAboutWindow:) keyEquivalent:@""] setTarget:self];
     [[myMenu addItemWithTitle:@"Check for updates..." action:@selector(open) keyEquivalent:@""] setTarget:self];
-    [[myMenu addItemWithTitle:@"Start at Login" action:@selector(open) keyEquivalent:@""] setTarget:self];
+    [[myMenu addItemWithTitle:@"Plugin installed" action:@selector(open) keyEquivalent:@""] setTarget:self];
+    
+    NSMenuItem *iconMenu = [[NSMenuItem alloc] init];
+    [iconMenu setTitle:@"Statusbar Icon"];
+    NSMenu *iconSub = [[NSMenu alloc] init];
+    
+    NSArray *iconImages = @[@"icon", @"icon1", @"icon2", @"icon3", @"icon4", @"icon5"];
+    for (NSString *icnName in iconImages) {
+        NSMenuItem *insert = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(changeStatusImage:) keyEquivalent:@""];
+        NSImage *ico = [AppDelegate resizedImage:[NSImage imageNamed:icnName] toPixelDimensions:NSMakeSize(18, 18)];
+        [ico setTemplate:true];
+        [insert setImage:ico];
+        [insert setToolTip:icnName];
+        [iconSub addItem:insert];
+    }
+    [iconMenu setSubmenu:iconSub];
+    
+    NSMenuItem *prefMenu = [[NSMenuItem alloc] init];
+    [prefMenu setTitle:@"Options"];
+    NSMenu *prefSub = [[NSMenu alloc] init];
+    [[prefSub addItemWithTitle:@"Start at Login" action:@selector(open) keyEquivalent:@""] setTarget:self];
+    [prefSub addItem:iconMenu];
+    [[prefSub addItemWithTitle:@"Report Issue" action:@selector(reportIssue) keyEquivalent:@""] setTarget:self];
+    [[prefSub addItemWithTitle:@"Donate" action:@selector(donate) keyEquivalent:@""] setTarget:self];
+    [prefMenu setSubmenu:prefSub];
+    [myMenu addItem:prefMenu];
+    
     [myMenu addItem:[NSMenuItem separatorItem]];
     
     for (NSString *key in prefsDict) {
@@ -202,16 +227,22 @@ NSMutableArray *menuItems;
     [sender setState:![sender state]];
 }
 
+- (IBAction)changeStatusImage:(id)sender {
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    NSImage *ico = [NSImage imageNamed:@"icon"];
+    if ([(NSMenuItem*)sender image] != nil) {
+        ico = [(NSMenuItem*)sender image];
+        [def setObject:[sender toolTip] forKey:@"iconFile"];
+    }
+    [_statusItem setImage:ico];
+}
+
 - (void)reportIssue {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/w0lfschild/DarkBoot/issues/new"]];
 }
 
 - (void)donate {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://goo.gl/DSyEFR"]];
-}
-
-- (void)sendEmail {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:aguywithlonghair@gmail.com"]];
 }
 
 - (void)visitGithub {
