@@ -19,7 +19,26 @@
 		FB397E9E1E89A4A300E9F3A6 /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB397E9D1E89A4A300E9F3A6 /* ZKSwizzle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FBB043111E89F99800FF8A31 /* PFAboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB0430F1E89F99800FF8A31 /* PFAboutWindow.xib */; };
 		FBB043121E89F99800FF8A31 /* PFAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB043101E89F99800FF8A31 /* PFAboutWindowController.m */; };
+		FBB043181E8A177900FF8A31 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBB043151E8A177900FF8A31 /* Changelog.rtf */; };
+		FBB043191E8A177900FF8A31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBB043161E8A177900FF8A31 /* Credits.rtf */; };
+		FBB0431A1E8A177900FF8A31 /* EULA.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBB043171E8A177900FF8A31 /* EULA.rtf */; };
+		FBB0431D1E8A17DB00FF8A31 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB0431C1E8A17DB00FF8A31 /* LetsMove.framework */; };
+		FBB0431F1E8A1B4D00FF8A31 /* LetsMove.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FBB0431C1E8A17DB00FF8A31 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBB0431E1E8A1B4400FF8A31 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FBB0431F1E8A1B4D00FF8A31 /* LetsMove.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B0C9792A1E0C796800EECDD4 /* cleanMenuBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cleanMenuBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +60,11 @@
 		FBB0430E1E89F99800FF8A31 /* PFAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAboutWindowController.h; sourceTree = "<group>"; };
 		FBB0430F1E89F99800FF8A31 /* PFAboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PFAboutWindow.xib; sourceTree = "<group>"; };
 		FBB043101E89F99800FF8A31 /* PFAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAboutWindowController.m; sourceTree = "<group>"; };
+		FBB043141E8A174A00FF8A31 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FBB043151E8A177900FF8A31 /* Changelog.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
+		FBB043161E8A177900FF8A31 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		FBB043171E8A177900FF8A31 /* EULA.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = EULA.rtf; sourceTree = "<group>"; };
+		FBB0431C1E8A17DB00FF8A31 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
 		FBF952DB1E885A9F001DC263 /* _StatusItemProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _StatusItemProxy.h; sourceTree = "<group>"; };
 		FBF952DC1E885A9F001DC263 /* NSStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStatusBar.h; sourceTree = "<group>"; };
 		FBF952DD1E885A9F001DC263 /* NSStatusBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStatusBarButton.h; sourceTree = "<group>"; };
@@ -62,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB0431D1E8A17DB00FF8A31 /* LetsMove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +126,8 @@
 		FB12E8611E75382A00BF144E /* cleanMenuApp */ = {
 			isa = PBXGroup;
 			children = (
+				FBB0431C1E8A17DB00FF8A31 /* LetsMove.framework */,
+				FBB0431B1E8A177D00FF8A31 /* Text */,
 				FBB043131E89F9A300FF8A31 /* PFAboutWindow */,
 				FB12E8651E75382B00BF144E /* Icons */,
 				FB12E8621E75382B00BF144E /* AppDelegate.h */,
@@ -137,11 +164,22 @@
 		FBB043131E89F9A300FF8A31 /* PFAboutWindow */ = {
 			isa = PBXGroup;
 			children = (
+				FBB043141E8A174A00FF8A31 /* LICENSE */,
 				FBB0430E1E89F99800FF8A31 /* PFAboutWindowController.h */,
 				FBB0430F1E89F99800FF8A31 /* PFAboutWindow.xib */,
 				FBB043101E89F99800FF8A31 /* PFAboutWindowController.m */,
 			);
 			name = PFAboutWindow;
+			sourceTree = "<group>";
+		};
+		FBB0431B1E8A177D00FF8A31 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				FBB043151E8A177900FF8A31 /* Changelog.rtf */,
+				FBB043161E8A177900FF8A31 /* Credits.rtf */,
+				FBB043171E8A177900FF8A31 /* EULA.rtf */,
+			);
+			name = Text;
 			sourceTree = "<group>";
 		};
 		FBF952E21E885AA8001DC263 /* Headers */ = {
@@ -185,6 +223,7 @@
 				FB12E85C1E75382A00BF144E /* Sources */,
 				FB12E85D1E75382A00BF144E /* Frameworks */,
 				FB12E85E1E75382A00BF144E /* Resources */,
+				FBB0431E1E8A1B4400FF8A31 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,12 +286,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB397E9B1E88C09100E9F3A6 /* icon6.png in Resources */,
+				FBB043191E8A177900FF8A31 /* Credits.rtf in Resources */,
 				FB397E971E88BF5800E9F3A6 /* icon2.png in Resources */,
 				FBB043111E89F99800FF8A31 /* PFAboutWindow.xib in Resources */,
 				FB397E951E88BE7300E9F3A6 /* icon4.png in Resources */,
+				FBB0431A1E8A177900FF8A31 /* EULA.rtf in Resources */,
 				FB12E8721E753A0500BF144E /* icon.png in Resources */,
 				FB397E911E88BB2F00E9F3A6 /* icon3.png in Resources */,
 				FB397E9A1E88C09100E9F3A6 /* icon1.png in Resources */,
+				FBB043181E8A177900FF8A31 /* Changelog.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +445,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = EX596BNL45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cleanMenu",
+				);
 				INFOPLIST_FILE = cleanMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.w0lf.cleanMenu;
@@ -416,6 +462,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = EX596BNL45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cleanMenu",
+				);
 				INFOPLIST_FILE = cleanMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.w0lf.cleanMenu;

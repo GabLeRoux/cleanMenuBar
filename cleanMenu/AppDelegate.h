@@ -6,10 +6,10 @@
 //  Copyright © 2017 Kevin M Beaulieu. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import AppKit;
+@import LetsMove;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate>
-
 
 @end
 

@@ -49,6 +49,10 @@ NSMutableArray *menuItems;
     return newImage;
 }
 
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
+    PFMoveToApplicationsFolderIfNecessary();
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     prefsDict = [[NSMutableDictionary alloc] initWithContentsOfFile:prefs];
     menuItems = [[NSMutableArray alloc] init];
@@ -168,6 +172,11 @@ NSMutableArray *menuItems;
     }
     
     [myMenu addItem:[NSMenuItem separatorItem]];
+    NSString *version =  [NSString stringWithFormat:@"Version %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    [[myMenu addItemWithTitle:version action:@selector(open) keyEquivalent:@""] setTarget:self];
+    [[myMenu addItemWithTitle:@"Wolfgang Baird" action:@selector(visitGithub) keyEquivalent:@""] setTarget:self];
+    [[myMenu addItemWithTitle:@"Visit website" action:@selector(cleanMBGithub) keyEquivalent:@""] setTarget:self];
+    [myMenu addItem:[NSMenuItem separatorItem]];
     [[myMenu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""] setTarget:NSApp];
     
     [_statusItem setMenu:myMenu];
@@ -191,6 +200,26 @@ NSMutableArray *menuItems;
     [prefsDict writeToFile:prefs atomically: YES];
     [self sendMessage:s];
     [sender setState:![sender state]];
+}
+
+- (void)reportIssue {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/w0lfschild/DarkBoot/issues/new"]];
+}
+
+- (void)donate {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://goo.gl/DSyEFR"]];
+}
+
+- (void)sendEmail {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:aguywithlonghair@gmail.com"]];
+}
+
+- (void)visitGithub {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/w0lfschild"]];
+}
+
+- (void)cleanMBGithub {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/w0lfschild/cleanMenuBar"]];
 }
 
 @end

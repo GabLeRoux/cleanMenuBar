@@ -7,7 +7,7 @@
 - Tested on 10.12
 - Menubar application with companion mySIMBL plugin to show/hide menu bar icons on macOS this is a basic free alternative to [Bartender](https://www.macbartender.com/)
 - Author:
-    + [w0lfschikd](https://github.com/w0lfschild)
+    + [w0lfschild](https://github.com/w0lfschild)
     + [Kevin Beaulieu](https://github.com/kevinmbeaulieu)
 
 # Installation:
