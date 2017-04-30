@@ -12,7 +12,7 @@
 
 # Installation:
 
-1. Download [mySIMBL](https://github.com/w0lfschild/app_updates/raw/master/mySIMBL/mySIMBL_master.zip)
+1. Download [mySIMBL](https://github.com/w0lfschild/app_updates/raw/master/mySIMBL/mySIMBL_master.zip) (installation requires [disabling System integrity protection](http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/))
 2. Download [cleanMenu](https://github.com/w0lfschild/cleanMenu/raw/master/build/cleanMenu.app.zip)
 3. Unzip downloads
 4. Open `mySIMBL.app` and open `cleanMenu.app`
